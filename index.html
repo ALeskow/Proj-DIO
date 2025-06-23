@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recapitulando o Curso da DIO - HTML</title>
+    <style>
+body{
+background-color: black;
+color: white;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.indice {
+    width: 300px;
+    height: 100vh;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 20px;
+    top: 0;
+    font-size: x-large;
+    line-height: 70px;
+}
+a {
+      text-decoration: none;
+      color: #4da8da;
+}
+a:hover {
+      color: #ff7de1;
+}
+.conteudo {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+      text-align: center;
+      font-size: large;
+}
+    </style>  
+</head>
+<body>
+    <header>
+  <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><strong>Recapitulando o Curso da DIO - Primeiros passos com HTML</strong></h1>
+  </header>
+  <hr>
+
+  <div class="container">
+    <div class="indice">
+      <nav><h2 id="índice" style="font-size: xx-large; text-align: center;">Índice</h2>
+      <ul>
+        <li><a href="#estrutura">Estrutura do HTML</a></li>
+      </ul>
+      <ol>
+        <li><a href="#conteudo">Conteúdo</a></li>
+        <li><a href="#formatacao">Formatação</a></li>
+        <li><a href="#mídias">Mídias</a></li>
+      </ol>
+      <ul>
+        <li><a href="#semântica">HTML Semântico</a></li>
+        <li><a href="#mais">Saiba Mais</a></li>
+      </ul></nav>
+      
+    </div>
+<main>
+    <div class="conteudo">
+      <section><h2 id="estrutura">Estrutura do HTML</h2>
+      <small><a href="#índice">Índice</a></small>
+      <p>A estrutura básica de um <abrr>HTML</abrr> consiste nas tags <b><i>"html"</i></b>, <b><i>"head"</i></b> e <b><i>"body"</i></b>.</p>
+      <p>A tag "<u>html</u>" engloba todas as informações. Dentro dela, "<u>head</u>" contém os dados do documento e "<u>body</u>" o conteúdo exibido na página do navegador.</p>
+      <p>Antes de inserir as informações, deve-se planejar o que ficará em cada local da página, de forma que os textos e mídias sejam organizados através das tags <i>div</i> e <i>span</i>, <i>main</i>, <i>header</i>, <i>footer</i>, <i>nav</i>, <i>section</i> e <i>article</i>, que permitem identificar, formatar e definir o visual das informações com CSS.</p></section>
+
+      <section><h2 id="conteudo">Conteúdo</h2>
+      <small><a href="#índice">Índice</a></small>
+      <p>Uma página deve apresentar e/ou coletar informações. As informações a serem apresentadas devem ser divididas em tópicos, cada qual com seu título (geralmente tags <i>h1</i> e <i>h2</i>) e elaborado em parágrafos (<i>p</i>).</p>
+      <p>Dependendo das informações, estas também podem ser expostas através de tabelas (tag <i>table</i>, contendo <i>thead</i>, <i>tbody</i> e <i>tfoot</i>, organizada em <i>tr</i> e <i>th</i>), listas (ordenadas <i>ol</i> ou não ordenadas <i>ul</i>, com itens em <i>li</i>) ou pelo uso de <a href="#mídias">mídias</a> complementares.</p>
+      <p>Para o intuito de coleta de dados, podemos criar formulários utilizando a tag <i>input</i> para caixas de texto, opções selecionáveis (<i>checkbox</i> e <i>radio</i>) e posteriormente <i>button</i> para limpar ou enviar.</p></section>
+
+      <section><h2 id="formatacao">Formatação</h2>
+      <small><a href="#índice">Índice</a></small>
+      <p>Para melhorar o apelo visual da página, podemos utilizar de várias ferramentas, tais como diferentes tamanhos de texto e títulos:</p>
+      <fieldset><h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
+      </fieldset>
+      <p>Também podemos destacar partes dos textos conforme necessário utilizando <i>i</i>, <u>u</u>, <strong>strong</strong> e <mark>mark</mark>, complementar os textos com <sub>sub</sub> e <sup>sup</sup>, mudar a <font style="font-family:Impact;">font</font>, <del>riscar partes do texto com <i>del</i></del> e separar citações com <i>blockquote</i>:</p>
+      <p><blockquote style="background-color: #1e1e1e;">"exemplo de citação :)"</blockquote></p></section>
+
+      <section><h2 id="mídias">Mídias</h2>
+      <small><a href="#índice">Índice</a></small>
+      <p>As mídias são valiosos recursos para tornarem um site mais interativo e dinâmico.</p>
+      <p>É possível adicionar arquivos através das tags <i>audio</i>, <i>img</i> e <i>video</i>, além de visualizar e interagir com o conteúdo de outras páginas <abrr>HTML</abrr> ao adicionar um <i>iframe</i>, tais como mapas, posts de redes sociais e videos do YouTube, entre outros.</p>
+      <p>Exemplo de iframe:</p>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pQN-pnXPaVg?si=SbEZDHpd4yTteQh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></section>
+
+      <section><h2 id="semântica"><abrr>HTML Semântico</abrr></h2>
+      <h6><a href="#índice">Índice</a></h6>
+      <p>Um ponto importante a considerar ao desenvolver um <abrr>HTML</abrr> é a semântica. A classificação das informações, tanto como a leitura por instrumentos de acessibilidade dependem de uma boa identificação das estruturas, elementos e conteúdos.</p>
+      <p>Além dos mencionados acima, é importante ressaltar para a acessibilidade o uso de <i>alt</i> para descrição de imagens.</p></section>
+
+      <h2 id="mais">Saiba Mais</h2>
+      <h6><a href="#índice">Índice</a></h6>
+      <p>Links usados como referência e úteis para aprender mais profundamente!</p>
+      <p><a target="blank" href="https://web.dio.me">https://web.dio.me</a></p>
+      <p><a target="blank" href="https://www.w3schools.com/">https://www.w3schools.com/</a></p>
+      <p><a target="blank" href="https://gist.github.com/profburnes/9d4d0ae6926e3adb6be7a9f6d1194064">GitHub - Estruturas e Tags Básicas do HTML5</a></p>
+    </div>
+  </div>
+  </main>
+</body>
+</html>
+
+
